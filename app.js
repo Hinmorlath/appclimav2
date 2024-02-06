@@ -17,7 +17,7 @@ let ciudad = document.getElementById('ciudad');
 let temperatura = document.getElementById('temperatura')
 
 function updateDOM(city, temp) {
-    var lacalor = (temp - 32) * (5/9);
+    var lacalor = (temp - 273.15);
     ciudad.textContent = ' ' + city;
     temperatura.textContent = ' ' + lacalor;
     if ( lacalor >= 20 ) {
